@@ -1,23 +1,32 @@
-.container {
-    border: 1px solid red;
-    max-width: 2000px;
+body {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.col {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 200px;
-    margin: 5px;
+div {
+    padding: auto;
+}
+
+.container {
+    width: 80vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
     border: 1px solid black;
 }
 
 .row {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 200px;
-    margin: 5px;
-    border: 1px solid black;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: auto;
+}
+
+.box {
+    flex: 1;
+    background-color: green;
+    width: auto;
+    height: auto;
 }

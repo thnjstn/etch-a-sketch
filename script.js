@@ -1,20 +1,21 @@
 const container = document.querySelector(".container");
+body = document.querySelector("body");
+body.appendChild(container);
 
-function createDivCol(num) {
+function createGrid(num) { 
     for (let i = 0; i < num; i++) {
-        const box = document.createElement("div");
-        box.classList.add("col");
-        container.appendChild(box);
+        const row = document.createElement("div");
+        row.classList.add("row");
+        container.appendChild(row);
+
+            for (let j = 0; j < num; j++) {
+                const box = document.createElement("div");
+                const list = box.classList;
+                list.add("box");
+                list.add(`col${j}`);
+                row.appendChild(box);
+            }
     }
 }
 
-function createDivRow(num) {
-    for (let i = 0; i < num; i++) {
-        const box = document.createElement("div");
-        box.classList.add("row");
-        container.appendChild(box);
-    }
-}
-
-createDivCol(16);
-createDivRow(16);
+createGrid(16);
