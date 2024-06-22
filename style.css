@@ -9,12 +9,15 @@ div {
     padding: auto;
 }
 
+* {
+    color: red;
+}
+
 .container {
     width: 80vh;
     height: 80vh;
     display: flex;
     justify-content: center;
-    border: 1px solid black;
 }
 
 .row {
@@ -29,4 +32,11 @@ div {
     background-color: green;
     width: auto;
     height: auto;
+}
+
+.containerSizeBtn {
+    color: black;
+    padding: 1vw;
+    margin: 2vw;
+    align-items: center;
 }
