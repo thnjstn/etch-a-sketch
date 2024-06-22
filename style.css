@@ -1,0 +1,23 @@
+.container {
+    border: 1px solid red;
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.col {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.row {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    margin: 5px;
+    border: 1px solid black;
+}
